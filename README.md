@@ -4,11 +4,6 @@
 
 ![Solana SolTrade SolTrade Cover 1 (3)](https://github.com/user-attachments/assets/cfa380f6-79d9-474d-9852-3e1976c6de70)
 
-
-![NPM Downloads](https://img.shields.io/npm/dm/solana-SolTrade-SolTrade?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/sendaifun/solana-SolTrade-SolTrade?style=for-the-badge)
-![GitHub License](https://img.shields.io/github/license/sendaifun/solana-SolTrade-SolTrade?style=for-the-badge)
-
 </div>
 
 An open-source toolSolTrade for connecting AI SolTrades to Solana protocols. Now, any SolTrade, using any model can autonomously perform 15+ Solana actions:
