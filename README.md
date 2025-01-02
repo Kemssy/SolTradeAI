@@ -2,16 +2,16 @@
 
 # SolTrade App
 
-![Solana Agent Kit Cover 1 (3)](https://github.com/user-attachments/assets/cfa380f6-79d9-474d-9852-3e1976c6de70)
+![Solana SolTrade SolTrade Cover 1 (3)](https://github.com/user-attachments/assets/cfa380f6-79d9-474d-9852-3e1976c6de70)
 
 
-![NPM Downloads](https://img.shields.io/npm/dm/solana-agent-kit?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/sendaifun/solana-agent-kit?style=for-the-badge)
-![GitHub License](https://img.shields.io/github/license/sendaifun/solana-agent-kit?style=for-the-badge)
+![NPM Downloads](https://img.shields.io/npm/dm/solana-SolTrade-SolTrade?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/sendaifun/solana-SolTrade-SolTrade?style=for-the-badge)
+![GitHub License](https://img.shields.io/github/license/sendaifun/solana-SolTrade-SolTrade?style=for-the-badge)
 
 </div>
 
-An open-source toolkit for connecting AI agents to Solana protocols. Now, any agent, using any model can autonomously perform 15+ Solana actions:
+An open-source toolSolTrade for connecting AI SolTrades to Solana protocols. Now, any SolTrade, using any model can autonomously perform 15+ Solana actions:
 
 - Trade tokens
 - Launch new tokens
@@ -21,10 +21,10 @@ An open-source toolkit for connecting AI agents to Solana protocols. Now, any ag
 - Launch tokens on AMMs
 - And more...
 
-Anyone - whether an SF-based AI researcher or a crypto-native builder - can bring their AI agents trained with any model and seamlessly integrate with Solana.
+Anyone - whether an SF-based AI researcher or a crypto-native builder - can bring their AI SolTrades trained with any model and seamlessly integrate with Solana.
 
 
-[![Run on Repl.it](https://replit.com/badge/github/sendaifun/solana-agent-kit)](https://replit.com/@sendaifun/Solana-Agent-Kit)
+[![Run on Repl.it](https://replit.com/badge/github/sendaifun/solana-SolTrade-SolTrade)](https://replit.com/@sendaifun/Solana-SolTrade-SolTrade)
 > Replit template created by [Arpit Singh](https://github.com/The-x-35)
 
 ## 🔧 Core Blockchain Features
@@ -67,13 +67,13 @@ Anyone - whether an SF-based AI researcher or a crypto-native builder - can brin
 
 - **LangChain Integration**
   - Ready-to-use LangChain tools for blockchain operations
-  - Autonomous agent support with React framework
+  - Autonomous SolTrade support with React framework
   - Memory management for persistent interactions
   - Streaming responses for real-time feedback
 
 - **Autonomous Modes**
   - Interactive chat mode for guided operations
-  - Autonomous mode for independent agent actions
+  - Autonomous mode for independent SolTrade actions
   - Configurable action intervals
   - Built-in error handling and recovery
 
@@ -86,23 +86,23 @@ Anyone - whether an SF-based AI researcher or a crypto-native builder - can brin
 ## 📦 Installation
 
 ```bash
-npm install solana-agent-kit
+npm install solana-SolTrade-SolTrade
 ```
 
 ## Quick Start
 
 ```typescript
-import { SolanaAgentKit, createSolanaTools } from "solana-agent-kit";
+import { SolanaSolTradeSolTrade, createSolanaTools } from "solana-SolTrade-SolTrade";
 
 // Initialize with private key and optional RPC URL
-const agent = new SolanaAgentKit(
+const SolTrade = new SolanaSolTradeSolTrade(
   "your-wallet-private-key-as-base58",
   "https://api.mainnet-beta.solana.com",
   "your-openai-api-key"
 );
 
 // Create LangChain tools
-const tools = createSolanaTools(agent);
+const tools = createSolanaTools(SolTrade);
 ```
 
 ## Usage Examples
@@ -110,7 +110,7 @@ const tools = createSolanaTools(agent);
 ### Deploy a New Token
 
 ```typescript
-const result = await agent.deployToken(
+const result = await SolTrade.deployToken(
   "my ai token", // name
   "uri", // uri
   "token", // symbol
@@ -124,7 +124,7 @@ console.log("Token Mint Address:", result.mint.toString());
 ### Create NFT Collection
 
 ```typescript
-const collection = await agent.deployCollection({
+const collection = await SolTrade.deployCollection({
   name: "My NFT Collection",
   uri: "https://arweave.net/metadata.json",
   royaltyBasisPoints: 500, // 5%
@@ -142,7 +142,7 @@ const collection = await agent.deployCollection({
 ```typescript
 import { PublicKey } from "@solana/web3.js";
 
-const signature = await agent.trade(
+const signature = await SolTrade.trade(
   new PublicKey("target-token-mint"),
   100, // amount
   new PublicKey("source-token-mint"),
@@ -155,7 +155,7 @@ const signature = await agent.trade(
 ```typescript
 import { PublicKey } from "@solana/web3.js";
 
-const signature = await agent.lendAssets(
+const signature = await SolTrade.lendAssets(
   100 // amount of USDC to lend
 );
 ```
@@ -163,7 +163,7 @@ const signature = await agent.lendAssets(
 ### Stake SOL
 
 ```typescript
-const signature = await agent.stake(
+const signature = await SolTrade.stake(
   1 // amount in SOL to stake
 );
 ```
@@ -182,7 +182,7 @@ import { PublicKey } from "@solana/web3.js";
     )
   );
 
-  const signature = await agent.sendCompressedAirdrop(
+  const signature = await SolTrade.sendCompressedAirdrop(
     new PublicKey("JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"), // mint
     42, // amount per recipient
     [
@@ -198,7 +198,7 @@ import { PublicKey } from "@solana/web3.js";
 
 ```typescript
 
-const price = await agent.pythFetchPrice(
+const price = await SolTrade.pythFetchPrice(
   "0xe62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43"
 );
 
@@ -207,24 +207,24 @@ console.log("Price in BTC/USD:", price);
 
 ## Examples
 
-### LangGraph Multi-Agent System
+### LangGraph Multi-SolTrade System
 
-The repository includes an advanced example of building a multi-agent system using LangGraph and Solana Agent Kit. Located in `examples/agent-kit-langgraph`, this example demonstrates:
+The repository includes an advanced example of building a multi-SolTrade system using LangGraph and Solana SolTrade SolTrade. Located in `examples/SolTrade-SolTrade-langgraph`, this example demonstrates:
 
-- Multi-agent architecture using LangGraph's StateGraph
-- Specialized agents for different tasks:
-  - General purpose agent for basic queries
-  - Transfer/Swap agent for transaction operations
-  - Read agent for blockchain data queries
-  - Manager agent for routing and orchestration
+- Multi-SolTrade architecture using LangGraph's StateGraph
+- Specialized SolTrades for different tasks:
+  - General purpose SolTrade for basic queries
+  - Transfer/Swap SolTrade for transaction operations
+  - Read SolTrade for blockchain data queries
+  - Manager SolTrade for routing and orchestration
 - Fully typed TypeScript implementation
 - Environment-based configuration
 
-Check out the [LangGraph example](examples/agent-kit-langgraph) for a complete implementation of an advanced Solana agent system.
+Check out the [LangGraph example](examples/SolTrade-SolTrade-langgraph) for a complete implementation of an advanced Solana SolTrade system.
 
 ## Dependencies
 
-The toolkit relies on several key Solana and Metaplex libraries:
+The toolSolTrade relies on several key Solana and Metaplex libraries:
 
 - @solana/web3.js
 - @solana/spl-token
@@ -234,28 +234,4 @@ The toolkit relies on several key Solana and Metaplex libraries:
 - @lightprotocol/compressed-token
 - @lightprotocol/stateless.js
 - @pythnetwork/price-service-client
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to contribute to this project.
-
-## Contributors
-
-<a href="https://github.com/sendaifun/solana-agent-kit/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sendaifun/solana-agent-kit" />
-</a>
-
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sendaifun/solana-agent-kit&type=Date)](https://star-history.com/#sendaifun/solana-agent-kit&Date)
-
-## License
-
-Apache-2 License
-
-## Security
-
-This toolkit handles private keys and transactions. Always ensure you're using it in a secure environment and never share your private keys.
 
